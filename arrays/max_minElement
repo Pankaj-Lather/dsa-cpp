@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int LA[5] = {20, 5, 49, 10, 30};
+    int MAX = LA[0];
+    int MIN = LA[0];
+
+    for (int i = 1; i < 5; i++)
+    {
+        if (LA[i] > MAX)
+        {
+            MAX = LA[i];
+        }
+
+        if (LA[i] < MIN)
+        {
+            MIN = LA[i];
+        }
+    }
+
+    cout << "Largest element = " << MAX << endl;
+    cout << "Smallest element = " << MIN << endl;
+
+    return 0;
+}
